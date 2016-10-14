@@ -14,11 +14,13 @@ import java.util.TimeZone;
  */
 public class Weather {
 
-    private String day, summary;
+    private String day, summary, low, high;
 
-    public Weather(long dt, String summary) {
+    public Weather(long dt, String summary, String low, String high) {
         this.day = convertTimeStampToDay(dt);
         this.summary = summary;
+        this.low = low;
+        this.high = high;
     }
 
     public String getDay() {
@@ -27,6 +29,8 @@ public class Weather {
     public String getSummary() {
         return summary;
     }
+    public String getLow() {return low;}
+    public String getHigh() {return high;}
 
     private static String convertTimeStampToDay(long dt) {
         // Convert from datetime in milliseconds to calendar.

@@ -9,8 +9,8 @@
     <string name="connection_error">Failed to connect to service...</string>
     <string name="day_text">Day</string>
     <string name="summary_text">Summary</string>
-    <string name="min_label_text">Low:</string>
+    <string name="min_label_text">"Low: "</string>
     <string name="min_text">Min Temp</string>
-    <string name="max_label_text">High:</string>
+    <string name="max_label_text">"High: "</string>
     <string name="max_text">Max Temp</string>
 </resources>
